@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fundo"
     tools:context=".view.MainActivity">
 
     <TextView
@@ -34,8 +35,8 @@
 
     <ImageView
         android:id="@+id/imgJogadaJogador"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.326"
@@ -46,8 +47,8 @@
 
     <ImageView
         android:id="@+id/imgJogadaPC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
@@ -58,10 +59,11 @@
 
     <Button
         android:id="@+id/btnPedra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/btnFundo"
+        android:layout_width="96dp"
+        android:layout_height="90dp"
         android:layout_marginStart="36dp"
-        android:text="Pedra"
+        android:drawableBottom="@mipmap/ic_pedra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -69,11 +71,12 @@
 
     <Button
         android:id="@+id/btnPapel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/btnFundo"
+        android:layout_width="105dp"
+        android:layout_height="92dp"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="180dp"
-        android:text="Papel"
+        android:drawableBottom="@mipmap/ic_launcher"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnTesoura"
         app:layout_constraintHorizontal_bias="0.153"
@@ -83,10 +86,11 @@
 
     <Button
         android:id="@+id/btnTesoura"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="92dp"
+        android:layout_height="100dp"
         android:layout_marginEnd="16dp"
-        android:text="Tesoura"
+        style="@style/btnFundo"
+        android:drawableBottom="@mipmap/ic_tesoura"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -97,6 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/btnPapel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

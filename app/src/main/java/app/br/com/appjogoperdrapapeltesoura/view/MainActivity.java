@@ -2,6 +2,7 @@ package app.br.com.appjogoperdrapapeltesoura.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -72,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     imgJogadaAdversaria.setImageResource(R.mipmap.ic_pedra);
 
                     resultado.setVisibility(View.VISIBLE);
+                    resultado.setTextColor(Color.GREEN);
                     resultado.setText("Vitoria");
 
                     Log.e("teste", "onClick: Vitoria" );
@@ -81,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     imgJogadaAdversaria.setImageResource(R.mipmap.ic_launcher);
 
                     resultado.setVisibility(View.VISIBLE);
+                    resultado.setTextColor(Color.YELLOW);
                     resultado.setText("Empate");
                     Log.e("teste", "onClick: Empate" );
 
@@ -91,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     imgJogadaAdversaria.setImageResource(R.mipmap.ic_tesoura);
 
                     resultado.setVisibility(View.VISIBLE);
+                    resultado.setTextColor(Color.RED);
                     resultado.setText("Derrota");
                     Log.e("teste", "onClick: Derrota" );
                 }
@@ -115,7 +119,9 @@ public class MainActivity extends AppCompatActivity {
                     imgJogadaAdversaria.setImageResource(R.mipmap.ic_tesoura);
 
                     resultado.setVisibility(View.VISIBLE);
+                    resultado.setTextColor(Color.GREEN);
                     resultado.setText("Vitoria");
+
                     Log.e("teste", "onClick: Vitoria" );
                 }else if(partidaController.resultPartida(jogador,computador) == 2){
 
@@ -123,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
                     imgJogadaAdversaria.setImageResource(R.mipmap.ic_pedra);
 
                     resultado.setVisibility(View.VISIBLE);
+                    resultado.setTextColor(Color.YELLOW);
                     resultado.setText("Empate");
                     Log.e("teste", "onClick: Empate" );
 
@@ -133,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
                     imgJogadaAdversaria.setImageResource(R.mipmap.ic_launcher);
 
                     resultado.setVisibility(View.VISIBLE);
+                    resultado.setTextColor(Color.RED);
                     resultado.setText("Derrota");
                     Log.e("teste", "onClick: Derrota" );}
 
@@ -157,6 +165,7 @@ public class MainActivity extends AppCompatActivity {
                     imgJogadaAdversaria.setImageResource(R.mipmap.ic_launcher);
 
                     resultado.setVisibility(View.VISIBLE);
+                    resultado.setTextColor(Color.GREEN);
                     resultado.setText("Vitoria");
                     Log.e("teste", "onClick: Vitoria" );
                 }else if(partidaController.resultPartida(jogador,computador) == 2){
@@ -165,6 +174,7 @@ public class MainActivity extends AppCompatActivity {
                     imgJogadaAdversaria.setImageResource(R.mipmap.ic_tesoura);
 
                     resultado.setVisibility(View.VISIBLE);
+                    resultado.setTextColor(Color.YELLOW);
                     resultado.setText("Empate");
                     Log.e("teste", "onClick: Empate" );
 
@@ -175,6 +185,7 @@ public class MainActivity extends AppCompatActivity {
                     imgJogadaAdversaria.setImageResource(R.mipmap.ic_pedra);
 
                     resultado.setVisibility(View.VISIBLE);
+                    resultado.setTextColor(Color.RED);
                     resultado.setText("Derrota");
                     Log.e("teste", "onClick: Derrota" );}
 
